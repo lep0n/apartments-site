@@ -1,0 +1,12 @@
+.fotorama__wrap {
+    margin: 0 auto;
+}
+
+.y-map {
+	width: 100%;
+	height: 400px;
+}
+
+[class*="copyrights-pane"] {
+	display: none !important;
+}

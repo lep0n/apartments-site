@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row g-4">
+    {% for item in apartments %}
+        {% if item.is_published %}
+        <div class="col mb-4">
+            <div class="card" style="width: 22rem;">
+                <img src="media/{{ item.main_image }}" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title">{{ item }}</h4>
+                    <p class="card-text">{{ item.price }}₽ за сутки</p>
+                    <a href="/{{ item.slug }}" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    {% endfor %}
+</div>
+{% endblock content %}
