@@ -1,6 +1,6 @@
 # 🏠 Apartments site
 
-Django SECRET_KEY and YMAPS_API_KEY are stored in environment variables.
+Django `SECRET_KEY` and `YMAPS_API_KEY` are stored in environment variables.
 
 -----
 
